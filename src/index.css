@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* nav bar styling */
+.nav {
+  overflow: hidden;
+  background-color: #5A5A5A;
+  height: 75px;
+}
+
+.nav a {
+  float: right;
+  color: #fdfff7;
+  text-align: center;
+  padding: 28px 20px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #f5f6f7;
+  color: black;
+}
+
+/* searchbar styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+/* front page styling */
+.home-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.crypto-text,
+.exchange-text,
+.exchanges-text,
+.currencies-text {
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+}
+
+.crypto-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.crypto-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.rank {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.price {
+  margin-right: 10px;
+}
+
+.change {
+  margin-right: 10px;
+}
+
+.market-cap {
+  margin-right: 10px;
+}
+
+.crypto-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.supply {
+  font-weight: bold;
+}
+
+/* specific cryptocurrency styling */
+.currencies-text {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.crypto-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.crypto-card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.market-cap,
+.volume {
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 5px;
+}
+
+.crypto-card p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-size: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+/* specific exchange styling */
+.exchange-text {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.exchange-text h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.exchange-text p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.exchange-text a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.exchange-text a:hover {
+  text-decoration: underline;
+}
+
+/* portfolio styling */
+.portfolio-container {
+  font-family: Arial, sans-serif;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.portfolio-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.portfolio-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.portfolio-form button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.portfolio-filter input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.portfolio-list {
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio-list li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.portfolio-item {
+  padding: 10px;
+  position: relative;
+}
+
+.portfolio-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.portfolio-item p {
+  margin: 5px 0;
+}
+
+.edit-remove-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-form input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-form button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.portfolio-value {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
